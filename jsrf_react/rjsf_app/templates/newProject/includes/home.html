@@ -1,12 +1,13 @@
 <div class="card" style="width: 18rem; margin: 3em">
-    <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/70150/address-book-clipart-lg.png" class="card-img-top" alt="address book" style='height: 10em; width: 10em; margin: 3.5em'>
+<h5 class="card-title">React-Json</h5>
+    <img src="https://raw.githubusercontent.com/rjsf-team/react-jsonschema-form/59a8206e148474bea854bbb004f624143fbcbac8/packages/core/logo.png" class="card-img-top" alt="address book" style='height: 10em; width: 10em; margin: 3.5em'>
     <div class="card-body">
-    <h5 class="card-title">React-Json</h5>
+    
       {% comment %} {% for person in persons %}
         <li>{{ person.name_first }}&nbsp;{{ person.name_last }}<ul>{{ person.address.city }},{{person.address.state }}&nbsp;{{ person.address.zip}}</ul></li>            
       {% endfor %}       {% endcomment %}
-       {% for person in persons %}
-        <li>{{ person.name_first }}&nbsp;{{ person.name_last }}<ul>{{ person.address.city }},{{person.address.state }}&nbsp;{{ person.address.zip}}</ul></li>            
-      {% endfor %}   
+    {% block content %}    
+      <p>This is where the content will be</p>
+    {% endblock %}
     </div>
   </div>
